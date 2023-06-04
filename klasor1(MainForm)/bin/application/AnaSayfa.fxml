@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_anaSayfa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #dcdcde;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnaSayfaController">
+   <children>
+      <BorderPane fx:id="border" prefHeight="500.0" prefWidth="600.0">
+         <left>
+            <VBox fx:id="vbox" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="408.0" prefWidth="130.0" style="-fx-background-color: #dba617;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="urunler_btn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#urunler_click" opacity="0.75" prefHeight="75.0" prefWidth="115.0" text="Ürünler">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../java/javafx/urun.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="depo" contentDisplay="TOP" mnemonicParsing="false" onAction="#depo_click" opacity="0.75" prefHeight="91.0" prefWidth="115.0" text="Depo" textOverrun="CLIP">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="fatura" contentDisplay="TOP" mnemonicParsing="false" onAction="#faturalar_click" opacity="0.75" prefHeight="95.0" prefWidth="116.0" text="Faturalar">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../java/javafx/fatura.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="calisan" contentDisplay="TOP" mnemonicParsing="false" onAction="#calisanlar_click" opacity="0.75" prefHeight="93.0" prefWidth="118.0" text="Çalışanlar Listesi">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../java/javafx/users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="ayarlar" contentDisplay="TOP" mnemonicParsing="false" onAction="#ayarlar_click" opacity="0.75" prefHeight="82.0" prefWidth="116.0" text="Ayarlar">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../java/javafx/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <AnchorPane fx:id="anchor_top" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #0a4b78;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="8.0" prefHeight="38.0" prefWidth="286.0" text="ANA SAYFA" textFill="#dba617" textOverrun="CLIP">
+                     <font>
+                        <Font name="Bell MT Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="image_icon" fitHeight="49.0" fitWidth="49.0" layoutX="537.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../java/javafx/anasayfa,.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane fx:id="anchor_lower" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #0a4b78;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="cikis_btn" layoutX="264.0" layoutY="2.0" mnemonicParsing="false" onAction="#cikis_click" prefHeight="25.0" prefWidth="109.0" text="ÇIKIŞ" textFill="#8a2424" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane fx:id="anchor_center" prefHeight="396.0" prefWidth="470.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

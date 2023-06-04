@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_urunler" prefHeight="440.0" prefWidth="545.0" style="-fx-background-color: #dba617;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.urunlerController">
+   <children>
+      <TableView fx:id="table" layoutX="30.0" layoutY="33.0" onMouseClicked="#mouse_click" prefHeight="227.0" prefWidth="495.0" style="-fx-background-color: #f6f7f7;" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="49.0" text="urun_id" />
+          <TableColumn fx:id="ad" prefWidth="92.0" text="urun_adı" />
+            <TableColumn fx:id="adet" prefWidth="60.0" text="adet" />
+            <TableColumn fx:id="satis_fiyat" prefWidth="64.0" text="satis_fiyati" />
+            <TableColumn fx:id="top_fiyat" prefWidth="76.0" text="toptan_fiyat " />
+            <TableColumn fx:id="yorum" prefWidth="140.0" text="yorum" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_id" layoutX="49.0" layoutY="280.0" prefHeight="25.0" prefWidth="131.0" promptText="urun_id" />
+      <TextField fx:id="txt_ad" layoutX="188.0" layoutY="280.0" prefHeight="25.0" prefWidth="131.0" promptText="urun_adı" />
+      <TextField fx:id="txt_adet" layoutX="336.0" layoutY="280.0" prefHeight="25.0" prefWidth="131.0" promptText="adet" />
+      <TextField fx:id="txt_fiyat2" layoutX="270.0" layoutY="309.0" prefHeight="25.0" prefWidth="131.0" promptText="alış_fiyatı" />
+      <TextField fx:id="txt_fiyat1" layoutX="114.0" layoutY="309.0" prefHeight="25.0" prefWidth="131.0" promptText="satış_fiyatı" />
+      <TextField fx:id="txt_yorum" layoutX="195.0" layoutY="353.0" prefHeight="25.0" prefWidth="140.0" promptText="yorumunuzu yazınız..." />
+      <Button fx:id="btnGuncelle" layoutX="213.0" layoutY="394.0" mnemonicParsing="false" onAction="#guncelle_click" style="-fx-background-color: #0a4b78;" text="GÜNCELLE" textFill="#dba617" />
+      <Button fx:id="btnEkle" layoutX="114.0" layoutY="394.0" mnemonicParsing="false" onAction="#ekle_click" style="-fx-background-color: #0a4b78;" text="EKLE" textFill="#dba617" />
+      <Button fx:id="btnSil" layoutX="358.0" layoutY="388.0" mnemonicParsing="false" onAction="#sil_click" style="-fx-background-color: #0a4b78;" text="SİL" textFill="#dba617" />
+      <Label alignment="TOP_CENTER" layoutX="145.0" layoutY="6.0" prefHeight="40.0" prefWidth="201.0" text="Ürünler" textFill="#0a4b78">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
